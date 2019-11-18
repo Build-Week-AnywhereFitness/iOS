@@ -20,6 +20,8 @@
 		4BD54852238356910040D1EA /* InstructorLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD54851238356910040D1EA /* InstructorLoginViewController.swift */; };
 		4BD54856238356E40040D1EA /* CreateClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD54855238356E40040D1EA /* CreateClassViewController.swift */; };
 		4BD54858238356ED0040D1EA /* ClassInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD54857238356ED0040D1EA /* ClassInfoViewController.swift */; };
+		4BD5485B238358290040D1EA /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD5485A238358290040D1EA /* OnboardViewController.swift */; };
+		4BD5485D238358400040D1EA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD5485C238358400040D1EA /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		4BD54851238356910040D1EA /* InstructorLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorLoginViewController.swift; sourceTree = "<group>"; };
 		4BD54855238356E40040D1EA /* CreateClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateClassViewController.swift; sourceTree = "<group>"; };
 		4BD54857238356ED0040D1EA /* ClassInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassInfoViewController.swift; sourceTree = "<group>"; };
+		4BD5485A238358290040D1EA /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
+		4BD5485C238358400040D1EA /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 			children = (
 				4B29730623833A4600E9CC76 /* AppDelegate.swift */,
 				4B29730823833A4600E9CC76 /* SceneDelegate.swift */,
+				4BD5485E238358710040D1EA /* Models */,
 				4BD5484A2383557E0040D1EA /* TableViewControllers */,
 				4BD548492383555E0040D1EA /* ViewControllers */,
 				4BD548462383521D0040D1EA /* Resources */,
@@ -94,6 +99,7 @@
 		4BD548492383555E0040D1EA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4BD54859238358100040D1EA /* OnboardViewControllers */,
 				4BD54854238356D60040D1EA /* ClassViewControllers */,
 				4BD54853238356A30040D1EA /* LoginViewControllers */,
 			);
@@ -106,6 +112,7 @@
 				4BD548472383549C0040D1EA /* ClientClassListedTableViewController.swift */,
 				4BD5484D238355C40040D1EA /* InstructorTableViewController.swift */,
 				4BD5484B238355A70040D1EA /* ProfileTableViewController.swift */,
+				4BD5485F2383587A0040D1EA /* Views */,
 			);
 			path = TableViewControllers;
 			sourceTree = "<group>";
@@ -126,6 +133,29 @@
 				4BD54857238356ED0040D1EA /* ClassInfoViewController.swift */,
 			);
 			path = ClassViewControllers;
+			sourceTree = "<group>";
+		};
+		4BD54859238358100040D1EA /* OnboardViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4BD5485A238358290040D1EA /* OnboardViewController.swift */,
+				4BD5485C238358400040D1EA /* WelcomeViewController.swift */,
+			);
+			path = OnboardViewControllers;
+			sourceTree = "<group>";
+		};
+		4BD5485E238358710040D1EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4BD5485F2383587A0040D1EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,10 +233,12 @@
 				4B29730723833A4600E9CC76 /* AppDelegate.swift in Sources */,
 				4BD54850238356710040D1EA /* ClientLoginViewController.swift in Sources */,
 				4BD54852238356910040D1EA /* InstructorLoginViewController.swift in Sources */,
+				4BD5485B238358290040D1EA /* OnboardViewController.swift in Sources */,
 				4BD5484C238355A70040D1EA /* ProfileTableViewController.swift in Sources */,
 				4BD54858238356ED0040D1EA /* ClassInfoViewController.swift in Sources */,
 				4B29730923833A4600E9CC76 /* SceneDelegate.swift in Sources */,
 				4BD548482383549C0040D1EA /* ClientClassListedTableViewController.swift in Sources */,
+				4BD5485D238358400040D1EA /* WelcomeViewController.swift in Sources */,
 				4B29731123833A4600E9CC76 /* AnywhereFitness.xcdatamodeld in Sources */,
 				4BD54856238356E40040D1EA /* CreateClassViewController.swift in Sources */,
 			);
