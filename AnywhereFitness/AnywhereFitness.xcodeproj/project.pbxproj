@@ -13,6 +13,13 @@
 		4B29731123833A4600E9CC76 /* AnywhereFitness.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B29730F23833A4600E9CC76 /* AnywhereFitness.xcdatamodeld */; };
 		4B29731323833A4900E9CC76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B29731223833A4900E9CC76 /* Assets.xcassets */; };
 		4B29731623833A4900E9CC76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B29731423833A4900E9CC76 /* LaunchScreen.storyboard */; };
+		4BD548482383549C0040D1EA /* ClientClassListedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD548472383549C0040D1EA /* ClientClassListedTableViewController.swift */; };
+		4BD5484C238355A70040D1EA /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD5484B238355A70040D1EA /* ProfileTableViewController.swift */; };
+		4BD5484E238355C40040D1EA /* InstructorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD5484D238355C40040D1EA /* InstructorTableViewController.swift */; };
+		4BD54850238356710040D1EA /* ClientLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD5484F238356710040D1EA /* ClientLoginViewController.swift */; };
+		4BD54852238356910040D1EA /* InstructorLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD54851238356910040D1EA /* InstructorLoginViewController.swift */; };
+		4BD54856238356E40040D1EA /* CreateClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD54855238356E40040D1EA /* CreateClassViewController.swift */; };
+		4BD54858238356ED0040D1EA /* ClassInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD54857238356ED0040D1EA /* ClassInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		4B29731223833A4900E9CC76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B29731523833A4900E9CC76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B29731723833A4900E9CC76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BD548472383549C0040D1EA /* ClientClassListedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientClassListedTableViewController.swift; sourceTree = "<group>"; };
+		4BD5484B238355A70040D1EA /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		4BD5484D238355C40040D1EA /* InstructorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorTableViewController.swift; sourceTree = "<group>"; };
+		4BD5484F238356710040D1EA /* ClientLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientLoginViewController.swift; sourceTree = "<group>"; };
+		4BD54851238356910040D1EA /* InstructorLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorLoginViewController.swift; sourceTree = "<group>"; };
+		4BD54855238356E40040D1EA /* CreateClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateClassViewController.swift; sourceTree = "<group>"; };
+		4BD54857238356ED0040D1EA /* ClassInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +72,60 @@
 			children = (
 				4B29730623833A4600E9CC76 /* AppDelegate.swift */,
 				4B29730823833A4600E9CC76 /* SceneDelegate.swift */,
-				4B29730C23833A4600E9CC76 /* Main.storyboard */,
+				4BD5484A2383557E0040D1EA /* TableViewControllers */,
+				4BD548492383555E0040D1EA /* ViewControllers */,
+				4BD548462383521D0040D1EA /* Resources */,
 				4B29731223833A4900E9CC76 /* Assets.xcassets */,
 				4B29731423833A4900E9CC76 /* LaunchScreen.storyboard */,
 				4B29731723833A4900E9CC76 /* Info.plist */,
 				4B29730F23833A4600E9CC76 /* AnywhereFitness.xcdatamodeld */,
 			);
 			path = AnywhereFitness;
+			sourceTree = "<group>";
+		};
+		4BD548462383521D0040D1EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B29730C23833A4600E9CC76 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4BD548492383555E0040D1EA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4BD54854238356D60040D1EA /* ClassViewControllers */,
+				4BD54853238356A30040D1EA /* LoginViewControllers */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4BD5484A2383557E0040D1EA /* TableViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4BD548472383549C0040D1EA /* ClientClassListedTableViewController.swift */,
+				4BD5484D238355C40040D1EA /* InstructorTableViewController.swift */,
+				4BD5484B238355A70040D1EA /* ProfileTableViewController.swift */,
+			);
+			path = TableViewControllers;
+			sourceTree = "<group>";
+		};
+		4BD54853238356A30040D1EA /* LoginViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4BD5484F238356710040D1EA /* ClientLoginViewController.swift */,
+				4BD54851238356910040D1EA /* InstructorLoginViewController.swift */,
+			);
+			path = LoginViewControllers;
+			sourceTree = "<group>";
+		};
+		4BD54854238356D60040D1EA /* ClassViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4BD54855238356E40040D1EA /* CreateClassViewController.swift */,
+				4BD54857238356ED0040D1EA /* ClassInfoViewController.swift */,
+			);
+			path = ClassViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +199,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD5484E238355C40040D1EA /* InstructorTableViewController.swift in Sources */,
 				4B29730723833A4600E9CC76 /* AppDelegate.swift in Sources */,
+				4BD54850238356710040D1EA /* ClientLoginViewController.swift in Sources */,
+				4BD54852238356910040D1EA /* InstructorLoginViewController.swift in Sources */,
+				4BD5484C238355A70040D1EA /* ProfileTableViewController.swift in Sources */,
+				4BD54858238356ED0040D1EA /* ClassInfoViewController.swift in Sources */,
 				4B29730923833A4600E9CC76 /* SceneDelegate.swift in Sources */,
+				4BD548482383549C0040D1EA /* ClientClassListedTableViewController.swift in Sources */,
 				4B29731123833A4600E9CC76 /* AnywhereFitness.xcdatamodeld in Sources */,
+				4BD54856238356E40040D1EA /* CreateClassViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

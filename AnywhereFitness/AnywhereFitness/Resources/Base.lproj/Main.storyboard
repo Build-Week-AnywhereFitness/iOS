@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wk5-XW-hTE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wk5-XW-hTE">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -93,7 +93,7 @@
         <!--Client Login View Controller-->
         <scene sceneID="hEf-zh-woz">
             <objects>
-                <viewController id="ngP-Wf-1e9" customClass="ClientLoginViewController" sceneMemberID="viewController">
+                <viewController id="ngP-Wf-1e9" customClass="ClientLoginViewController" customModule="AnywhereFitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="axd-aA-RXq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,7 +124,7 @@
         <!--Class Info View Controller-->
         <scene sceneID="FFK-1w-mPb">
             <objects>
-                <viewController id="hki-Vl-ZYq" customClass="ClassInfoViewController" sceneMemberID="viewController">
+                <viewController id="hki-Vl-ZYq" customClass="ClassInfoViewController" customModule="AnywhereFitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HMK-FX-cYV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -137,10 +137,10 @@
             </objects>
             <point key="canvasLocation" x="2996" y="50"/>
         </scene>
-        <!--Classes Listed Table View Controller-->
+        <!--Client Class Listed Table View Controller-->
         <scene sceneID="QhJ-j7-Czw">
             <objects>
-                <tableViewController id="AbW-2X-eVP" customClass="ClassesListedTableViewController" sceneMemberID="viewController">
+                <tableViewController id="AbW-2X-eVP" customClass="ClientClassListedTableViewController" customModule="AnywhereFitness" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="iKc-Sh-x2x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -181,7 +181,7 @@
         <!--Profile Table View Controller-->
         <scene sceneID="HJD-41-MKt">
             <objects>
-                <tableViewController id="Uo8-eq-6O1" customClass="ProfileTableViewController" sceneMemberID="viewController">
+                <tableViewController id="Uo8-eq-6O1" customClass="ProfileTableViewController" customModule="AnywhereFitness" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fdu-Eg-yLY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -210,7 +210,7 @@
         <!--Instructor Login View Controller-->
         <scene sceneID="nAT-Hd-DbA">
             <objects>
-                <viewController id="jTl-6T-eBz" customClass="InstructorLoginViewController" sceneMemberID="viewController">
+                <viewController id="jTl-6T-eBz" customClass="InstructorLoginViewController" customModule="AnywhereFitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QGP-uF-cPr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -241,7 +241,7 @@
         <!--Instructor Table View Controller-->
         <scene sceneID="ZfU-s0-Va2">
             <objects>
-                <tableViewController id="EAf-Hk-Jun" customClass="InstructorTableViewController" sceneMemberID="viewController">
+                <tableViewController id="EAf-Hk-Jun" customClass="InstructorTableViewController" customModule="AnywhereFitness" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gYU-KW-z80">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -276,10 +276,10 @@
             </objects>
             <point key="canvasLocation" x="2075" y="795"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Class View Controller-->
         <scene sceneID="3Ox-9C-z2E">
             <objects>
-                <viewController id="yQf-rk-X5R" sceneMemberID="viewController">
+                <viewController id="yQf-rk-X5R" customClass="CreateClassViewController" customModule="AnywhereFitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sCJ-Bl-15z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
