@@ -22,6 +22,7 @@
 		4BD54858238356ED0040D1EA /* ClassInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD54857238356ED0040D1EA /* ClassInfoViewController.swift */; };
 		4BD5485B238358290040D1EA /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD5485A238358290040D1EA /* OnboardViewController.swift */; };
 		4BD5485D238358400040D1EA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD5485C238358400040D1EA /* WelcomeViewController.swift */; };
+		80A8A355238469CA000AED7C /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8A354238469CA000AED7C /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		4BD54857238356ED0040D1EA /* ClassInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassInfoViewController.swift; sourceTree = "<group>"; };
 		4BD5485A238358290040D1EA /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
 		4BD5485C238358400040D1EA /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		80A8A354238469CA000AED7C /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		4B2972FA23833A4600E9CC76 = {
 			isa = PBXGroup;
 			children = (
+				80A8A356238469E4000AED7C /* Models */,
 				4B29730523833A4600E9CC76 /* AnywhereFitness */,
 				4B29730423833A4600E9CC76 /* Products */,
 			);
@@ -158,6 +161,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		80A8A356238469E4000AED7C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				80A8A354238469CA000AED7C /* CoreDataStack.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -230,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BD5484E238355C40040D1EA /* InstructorTableViewController.swift in Sources */,
+				80A8A355238469CA000AED7C /* CoreDataStack.swift in Sources */,
 				4B29730723833A4600E9CC76 /* AppDelegate.swift in Sources */,
 				4BD54850238356710040D1EA /* ClientLoginViewController.swift in Sources */,
 				4BD54852238356910040D1EA /* InstructorLoginViewController.swift in Sources */,
