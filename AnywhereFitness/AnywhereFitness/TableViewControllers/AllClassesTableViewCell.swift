@@ -11,6 +11,7 @@ import UIKit
 class AllClassesTableViewCell: UITableViewCell {
 
     @IBOutlet weak var className: UILabel!
+    @IBOutlet weak var instructorName: UILabel!
     @IBOutlet weak var time: UILabel!
     @IBOutlet weak var level: UILabel!
     

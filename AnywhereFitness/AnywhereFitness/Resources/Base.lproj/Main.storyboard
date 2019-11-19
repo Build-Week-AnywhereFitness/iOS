@@ -299,30 +299,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AllClassesCell" rowHeight="80" id="nzx-hz-Zkl" customClass="AllClassesTableViewCell" customModule="AnywhereFitness" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="80"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AllClassesCell" rowHeight="120" id="nzx-hz-Zkl" customClass="AllClassesTableViewCell" customModule="AnywhereFitness" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nzx-hz-Zkl" id="fuu-BY-a3j">
-                                    <rect key="frame" x="0.0" y="0.0" width="383" height="80"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Po0-Ot-Sg6">
-                                            <rect key="frame" x="325" y="24" width="40" height="20.5"/>
+                                            <rect key="frame" x="325" y="46" width="40" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="s6d-te-Mha">
-                                            <rect key="frame" x="20" y="19" width="205" height="48"/>
+                                            <rect key="frame" x="20" y="19" width="205" height="88"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAj-vh-7EJ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="91" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="114.5" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="Evp-ip-CXB"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POU-v6-ZDx">
+                                                    <rect key="frame" x="0.0" y="28" width="79.5" height="32.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="h0s-qL-z3r"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJl-Ka-cOO">
-                                                    <rect key="frame" x="0.0" y="28.5" width="38" height="19.5"/>
+                                                    <rect key="frame" x="0.0" y="68.5" width="38" height="19.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="19.5" id="umA-aS-xvu"/>
                                                     </constraints>
@@ -338,12 +350,13 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="s6d-te-Mha" secondAttribute="bottom" constant="2" id="W9I-aS-ao8"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="Po0-Ot-Sg6" secondAttribute="trailing" constant="10" id="XXs-Hk-koG"/>
                                         <constraint firstItem="s6d-te-Mha" firstAttribute="top" secondItem="fuu-BY-a3j" secondAttribute="topMargin" constant="8" id="fcc-7i-Io3"/>
-                                        <constraint firstItem="Po0-Ot-Sg6" firstAttribute="top" secondItem="fuu-BY-a3j" secondAttribute="topMargin" constant="13" id="gGm-T2-16W"/>
+                                        <constraint firstItem="Po0-Ot-Sg6" firstAttribute="top" secondItem="fuu-BY-a3j" secondAttribute="topMargin" constant="35" id="gGm-T2-16W"/>
                                         <constraint firstItem="Po0-Ot-Sg6" firstAttribute="leading" secondItem="s6d-te-Mha" secondAttribute="trailing" constant="100" id="yaO-Q4-WRe"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="className" destination="DAj-vh-7EJ" id="slP-YO-yk6"/>
+                                    <outlet property="instructorName" destination="POU-v6-ZDx" id="Xsl-lq-vk8"/>
                                     <outlet property="level" destination="Po0-Ot-Sg6" id="SxR-bz-wyW"/>
                                     <outlet property="time" destination="TJl-Ka-cOO" id="oX4-pv-dfp"/>
                                     <segue destination="hki-Vl-ZYq" kind="show" identifier="RegisterSegue" id="8lk-vR-5i0"/>
