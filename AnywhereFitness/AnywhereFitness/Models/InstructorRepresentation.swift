@@ -11,5 +11,6 @@ import Foundation
 struct InstructorRepresentation: Codable {
     let name: String
     let email: String
+    let password: String
     let id: UUID
 }

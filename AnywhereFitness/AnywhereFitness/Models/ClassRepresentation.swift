@@ -10,9 +10,9 @@ import Foundation
 
 struct ClassRepresentation: Codable {
     let name: String
-    let type: Int
-    let duration: Int
-    let intensityLevel: Int
+    let type: Int // Custom Enum
+    let duration: Int // Custom Enum
+    let intensityLevel: Int // Custom Enum
     let location: String
     let numOfAttendees: Int
     let maxClassSize: Int

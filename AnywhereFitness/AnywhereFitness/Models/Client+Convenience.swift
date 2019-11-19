@@ -13,25 +13,25 @@ extension Client {
     
     var clientRepresentation: ClientRepresentation? {
         
-        guard let name = name,
-            let email = email else { return nil }
+        guard let email = email,
+            let password = password else { return nil }
         
-        return ClientRepresentation(name: name, email: email)
+        return ClientRepresentation(email: email, password: password)
     }
     
-    @discardableResult convenience init(name: String,
-                                        email: String,
+    @discardableResult convenience init(email: String,
+                                        password: String,
                                         context: NSManagedObjectContext) {
         self.init(context: context)
         
-        self.name = name
         self.email = email
+        self.password = password
     }
     
     @discardableResult convenience init?(clientRepresentation: ClientRepresentation, context: NSManagedObjectContext) {
         
-        self.init(name: clientRepresentation.name,
-                  email: clientRepresentation.email,
+        self.init(email: clientRepresentation.email,
+                  password: clientRepresentation.password,
                   context: context)
     }
 }
