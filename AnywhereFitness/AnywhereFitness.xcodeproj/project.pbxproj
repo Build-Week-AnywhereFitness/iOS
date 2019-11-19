@@ -24,6 +24,7 @@
 		4BB5FF6523847AF10053DD68 /* AllClassesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB5FF6423847AF10053DD68 /* AllClassesTableViewCell.swift */; };
 		4BB5FF6723847AFF0053DD68 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB5FF6623847AFF0053DD68 /* ProfileTableViewCell.swift */; };
 		4BB5FF6923847B0C0053DD68 /* InstructorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB5FF6823847B0C0053DD68 /* InstructorTableViewCell.swift */; };
+		4BB5FF6B23849CA50053DD68 /* Instructor+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB5FF6A23849CA50053DD68 /* Instructor+Convenience.swift */; };
 		4BD54850238356710040D1EA /* ClientLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD5484F238356710040D1EA /* ClientLoginViewController.swift */; };
 		4BD54852238356910040D1EA /* InstructorLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD54851238356910040D1EA /* InstructorLoginViewController.swift */; };
 		4BD54856238356E40040D1EA /* CreateClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD54855238356E40040D1EA /* CreateClassViewController.swift */; };
@@ -54,6 +55,7 @@
 		4BB5FF6423847AF10053DD68 /* AllClassesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllClassesTableViewCell.swift; sourceTree = "<group>"; };
 		4BB5FF6623847AFF0053DD68 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		4BB5FF6823847B0C0053DD68 /* InstructorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorTableViewCell.swift; sourceTree = "<group>"; };
+		4BB5FF6A23849CA50053DD68 /* Instructor+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instructor+Convenience.swift"; sourceTree = "<group>"; };
 		4BD5484F238356710040D1EA /* ClientLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientLoginViewController.swift; sourceTree = "<group>"; };
 		4BD54851238356910040D1EA /* InstructorLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorLoginViewController.swift; sourceTree = "<group>"; };
 		4BD54855238356E40040D1EA /* CreateClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateClassViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				80A8A354238469CA000AED7C /* CoreDataStack.swift */,
 				4BB5FF47238471560053DD68 /* Class+Convenience.swift */,
 				4BB5FF49238471830053DD68 /* Client+Convenience.swift */,
+				4BB5FF6A23849CA50053DD68 /* Instructor+Convenience.swift */,
 				4BB5FF4B238471D10053DD68 /* ClassRepresentation.swift */,
 				4BB5FF4D238471EF0053DD68 /* ClientRepresentation.swift */,
 				4BB5FF4F238472060053DD68 /* InstructorRepresentation.swift */,
@@ -270,6 +273,7 @@
 				4BB5FF6323847AE30053DD68 /* InstructorTableViewController.swift in Sources */,
 				4BD5485D238358400040D1EA /* WelcomeViewController.swift in Sources */,
 				4BB5FF5F23847ACD0053DD68 /* AllClassesTableViewController.swift in Sources */,
+				4BB5FF6B23849CA50053DD68 /* Instructor+Convenience.swift in Sources */,
 				4BB5FF4C238471D10053DD68 /* ClassRepresentation.swift in Sources */,
 				4B29731123833A4600E9CC76 /* AnywhereFitness.xcdatamodeld in Sources */,
 				4BD54856238356E40040D1EA /* CreateClassViewController.swift in Sources */,

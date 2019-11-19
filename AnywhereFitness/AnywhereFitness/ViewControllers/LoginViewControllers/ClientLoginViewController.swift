@@ -18,10 +18,15 @@ class ClientLoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
+
+    @IBAction func loginSegmentChanged(_ sender: UISegmentedControl) {
+    }
+    
+    @IBAction func enterButtonTapped(_ sender: UIButton) {
+    }
+
 
     /*
     // MARK: - Navigation
