@@ -10,6 +10,17 @@ import UIKit
 
 class ClassInfoViewController: UIViewController {
 
+    @IBOutlet weak var className: UILabel!
+    @IBOutlet weak var classType: UILabel!
+    @IBOutlet weak var intensity: UILabel!
+    @IBOutlet weak var instructorName: UILabel!
+    @IBOutlet weak var date: UILabel!
+    @IBOutlet weak var location: UILabel!
+    @IBOutlet weak var duration: UILabel!
+    @IBOutlet weak var descriptionTextView: UITextView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

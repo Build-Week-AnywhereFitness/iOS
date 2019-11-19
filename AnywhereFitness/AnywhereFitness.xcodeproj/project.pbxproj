@@ -18,9 +18,12 @@
 		4BB5FF4C238471D10053DD68 /* ClassRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB5FF4B238471D10053DD68 /* ClassRepresentation.swift */; };
 		4BB5FF4E238471EF0053DD68 /* ClientRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB5FF4D238471EF0053DD68 /* ClientRepresentation.swift */; };
 		4BB5FF50238472060053DD68 /* InstructorRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB5FF4F238472060053DD68 /* InstructorRepresentation.swift */; };
-		4BD548482383549C0040D1EA /* ClientClassListedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD548472383549C0040D1EA /* ClientClassListedTableViewController.swift */; };
-		4BD5484C238355A70040D1EA /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD5484B238355A70040D1EA /* ProfileTableViewController.swift */; };
-		4BD5484E238355C40040D1EA /* InstructorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD5484D238355C40040D1EA /* InstructorTableViewController.swift */; };
+		4BB5FF5F23847ACD0053DD68 /* AllClassesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB5FF5E23847ACD0053DD68 /* AllClassesTableViewController.swift */; };
+		4BB5FF6123847AD90053DD68 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB5FF6023847AD90053DD68 /* ProfileTableViewController.swift */; };
+		4BB5FF6323847AE30053DD68 /* InstructorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB5FF6223847AE30053DD68 /* InstructorTableViewController.swift */; };
+		4BB5FF6523847AF10053DD68 /* AllClassesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB5FF6423847AF10053DD68 /* AllClassesTableViewCell.swift */; };
+		4BB5FF6723847AFF0053DD68 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB5FF6623847AFF0053DD68 /* ProfileTableViewCell.swift */; };
+		4BB5FF6923847B0C0053DD68 /* InstructorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB5FF6823847B0C0053DD68 /* InstructorTableViewCell.swift */; };
 		4BD54850238356710040D1EA /* ClientLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD5484F238356710040D1EA /* ClientLoginViewController.swift */; };
 		4BD54852238356910040D1EA /* InstructorLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD54851238356910040D1EA /* InstructorLoginViewController.swift */; };
 		4BD54856238356E40040D1EA /* CreateClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD54855238356E40040D1EA /* CreateClassViewController.swift */; };
@@ -44,9 +47,12 @@
 		4BB5FF4B238471D10053DD68 /* ClassRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRepresentation.swift; sourceTree = "<group>"; };
 		4BB5FF4D238471EF0053DD68 /* ClientRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientRepresentation.swift; sourceTree = "<group>"; };
 		4BB5FF4F238472060053DD68 /* InstructorRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorRepresentation.swift; sourceTree = "<group>"; };
-		4BD548472383549C0040D1EA /* ClientClassListedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientClassListedTableViewController.swift; sourceTree = "<group>"; };
-		4BD5484B238355A70040D1EA /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
-		4BD5484D238355C40040D1EA /* InstructorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorTableViewController.swift; sourceTree = "<group>"; };
+		4BB5FF5E23847ACD0053DD68 /* AllClassesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllClassesTableViewController.swift; sourceTree = "<group>"; };
+		4BB5FF6023847AD90053DD68 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		4BB5FF6223847AE30053DD68 /* InstructorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorTableViewController.swift; sourceTree = "<group>"; };
+		4BB5FF6423847AF10053DD68 /* AllClassesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllClassesTableViewCell.swift; sourceTree = "<group>"; };
+		4BB5FF6623847AFF0053DD68 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		4BB5FF6823847B0C0053DD68 /* InstructorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorTableViewCell.swift; sourceTree = "<group>"; };
 		4BD5484F238356710040D1EA /* ClientLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientLoginViewController.swift; sourceTree = "<group>"; };
 		4BD54851238356910040D1EA /* InstructorLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorLoginViewController.swift; sourceTree = "<group>"; };
 		4BD54855238356E40040D1EA /* CreateClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateClassViewController.swift; sourceTree = "<group>"; };
@@ -88,8 +94,8 @@
 			children = (
 				4B29730623833A4600E9CC76 /* AppDelegate.swift */,
 				4B29730823833A4600E9CC76 /* SceneDelegate.swift */,
+				4BB5FF5D23847AB70053DD68 /* TableViewControllers */,
 				80A8A356238469E4000AED7C /* Models */,
-				4BD5484A2383557E0040D1EA /* TableViewControllers */,
 				4BD548492383555E0040D1EA /* ViewControllers */,
 				4BD548462383521D0040D1EA /* Resources */,
 				4B29731223833A4900E9CC76 /* Assets.xcassets */,
@@ -97,6 +103,19 @@
 				4B29731723833A4900E9CC76 /* Info.plist */,
 			);
 			path = AnywhereFitness;
+			sourceTree = "<group>";
+		};
+		4BB5FF5D23847AB70053DD68 /* TableViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4BB5FF5E23847ACD0053DD68 /* AllClassesTableViewController.swift */,
+				4BB5FF6023847AD90053DD68 /* ProfileTableViewController.swift */,
+				4BB5FF6223847AE30053DD68 /* InstructorTableViewController.swift */,
+				4BB5FF6423847AF10053DD68 /* AllClassesTableViewCell.swift */,
+				4BB5FF6623847AFF0053DD68 /* ProfileTableViewCell.swift */,
+				4BB5FF6823847B0C0053DD68 /* InstructorTableViewCell.swift */,
+			);
+			path = TableViewControllers;
 			sourceTree = "<group>";
 		};
 		4BD548462383521D0040D1EA /* Resources */ = {
@@ -115,17 +134,6 @@
 				4BD54853238356A30040D1EA /* LoginViewControllers */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		4BD5484A2383557E0040D1EA /* TableViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				4BD548472383549C0040D1EA /* ClientClassListedTableViewController.swift */,
-				4BD5484D238355C40040D1EA /* InstructorTableViewController.swift */,
-				4BD5484B238355A70040D1EA /* ProfileTableViewController.swift */,
-				4BD5485F2383587A0040D1EA /* Views */,
-			);
-			path = TableViewControllers;
 			sourceTree = "<group>";
 		};
 		4BD54853238356A30040D1EA /* LoginViewControllers */ = {
@@ -153,13 +161,6 @@
 				4BD5485C238358400040D1EA /* WelcomeViewController.swift */,
 			);
 			path = OnboardViewControllers;
-			sourceTree = "<group>";
-		};
-		4BD5485F2383587A0040D1EA /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		80A8A356238469E4000AED7C /* Models */ = {
@@ -247,7 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BD5484E238355C40040D1EA /* InstructorTableViewController.swift in Sources */,
+				4BB5FF6923847B0C0053DD68 /* InstructorTableViewCell.swift in Sources */,
 				4BB5FF4E238471EF0053DD68 /* ClientRepresentation.swift in Sources */,
 				80A8A355238469CA000AED7C /* CoreDataStack.swift in Sources */,
 				4BB5FF50238472060053DD68 /* InstructorRepresentation.swift in Sources */,
@@ -255,13 +256,16 @@
 				4BD54850238356710040D1EA /* ClientLoginViewController.swift in Sources */,
 				4BD54852238356910040D1EA /* InstructorLoginViewController.swift in Sources */,
 				4BD5485B238358290040D1EA /* OnboardViewController.swift in Sources */,
+				4BB5FF6123847AD90053DD68 /* ProfileTableViewController.swift in Sources */,
 				4BB5FF48238471560053DD68 /* Class+Convenience.swift in Sources */,
 				4BB5FF4A238471830053DD68 /* Client+Convenience.swift in Sources */,
-				4BD5484C238355A70040D1EA /* ProfileTableViewController.swift in Sources */,
+				4BB5FF6523847AF10053DD68 /* AllClassesTableViewCell.swift in Sources */,
 				4BD54858238356ED0040D1EA /* ClassInfoViewController.swift in Sources */,
 				4B29730923833A4600E9CC76 /* SceneDelegate.swift in Sources */,
-				4BD548482383549C0040D1EA /* ClientClassListedTableViewController.swift in Sources */,
+				4BB5FF6723847AFF0053DD68 /* ProfileTableViewCell.swift in Sources */,
+				4BB5FF6323847AE30053DD68 /* InstructorTableViewController.swift in Sources */,
 				4BD5485D238358400040D1EA /* WelcomeViewController.swift in Sources */,
+				4BB5FF5F23847ACD0053DD68 /* AllClassesTableViewController.swift in Sources */,
 				4BB5FF4C238471D10053DD68 /* ClassRepresentation.swift in Sources */,
 				4B29731123833A4600E9CC76 /* AnywhereFitness.xcdatamodeld in Sources */,
 				4BD54856238356E40040D1EA /* CreateClassViewController.swift in Sources */,

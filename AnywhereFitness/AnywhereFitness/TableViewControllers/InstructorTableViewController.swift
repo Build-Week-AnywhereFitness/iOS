@@ -2,7 +2,7 @@
 //  InstructorTableViewController.swift
 //  AnywhereFitness
 //
-//  Created by Niranjan Kumar on 11/18/19.
+//  Created by Niranjan Kumar on 11/19/19.
 //  Copyright © 2019 NarJesse. All rights reserved.
 //
 

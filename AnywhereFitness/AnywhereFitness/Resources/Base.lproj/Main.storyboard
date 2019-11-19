@@ -36,7 +36,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <state key="normal" title="Skip"/>
                                 <connections>
-                                    <segue destination="ngP-Wf-1e9" kind="presentation" identifier="SkipOnboardSegue" modalPresentationStyle="fullScreen" id="FiA-4c-u67"/>
+                                    <segue destination="AbW-2X-eVP" kind="show" identifier="SkipSegue" id="zWc-4t-Rnj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -167,6 +167,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lFc-AP-gj1"/>
                     </view>
+                    <connections>
+                        <outlet property="enterButton" destination="D9Z-3j-tF9" id="kFW-va-5rn"/>
+                        <outlet property="loginControl" destination="5TC-d4-gXv" id="zac-4h-ndw"/>
+                        <outlet property="passwordTextField" destination="7Kf-E4-U2q" id="Fds-zG-YFX"/>
+                        <outlet property="usernameTextField" destination="19x-JW-CfS" id="Kbl-sZ-ClC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UPf-Dz-Aby" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -268,6 +274,17 @@
                         <viewLayoutGuide key="safeArea" id="O1T-te-mGC"/>
                     </view>
                     <navigationItem key="navigationItem" title="Class Info" id="27a-t2-SbP"/>
+                    <connections>
+                        <outlet property="className" destination="rXM-1L-Umt" id="i30-4K-Dxh"/>
+                        <outlet property="classType" destination="zUk-vX-6R5" id="btp-UI-ppq"/>
+                        <outlet property="date" destination="CfH-1y-jca" id="gNn-Zn-xaC"/>
+                        <outlet property="description" destination="Y0G-HE-TcX" id="9ss-fG-BO9"/>
+                        <outlet property="descriptionTextView" destination="Y0G-HE-TcX" id="8Qc-SK-XeK"/>
+                        <outlet property="duration" destination="KFb-8W-Doz" id="LOz-UM-X65"/>
+                        <outlet property="instructorName" destination="klx-6F-G5o" id="0XS-mt-aD0"/>
+                        <outlet property="intensity" destination="id1-vF-Amr" id="IpG-o7-IMA"/>
+                        <outlet property="location" destination="hkS-Q9-OAF" id="TFC-4C-4JH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4a9-ZG-oGR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -276,13 +293,13 @@
         <!--All Classes-->
         <scene sceneID="QhJ-j7-Czw">
             <objects>
-                <tableViewController id="AbW-2X-eVP" customClass="ClientClassListedTableViewController" customModule="AnywhereFitness" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="AbW-2X-eVP" customClass="AllClassesTableViewController" customModule="AnywhereFitness" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="iKc-Sh-x2x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="80" id="nzx-hz-Zkl">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AllClassesCell" rowHeight="80" id="nzx-hz-Zkl" customClass="AllClassesTableViewCell" customModule="AnywhereFitness" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nzx-hz-Zkl" id="fuu-BY-a3j">
@@ -326,6 +343,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="className" destination="DAj-vh-7EJ" id="slP-YO-yk6"/>
+                                    <outlet property="level" destination="Po0-Ot-Sg6" id="SxR-bz-wyW"/>
+                                    <outlet property="time" destination="TJl-Ka-cOO" id="oX4-pv-dfp"/>
                                     <segue destination="hki-Vl-ZYq" kind="show" identifier="RegisterSegue" id="8lk-vR-5i0"/>
                                 </connections>
                             </tableViewCell>
@@ -359,7 +379,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="NCs-nu-XBs">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileCell" rowHeight="80" id="NCs-nu-XBs" customClass="ProfileTableViewCell" customModule="AnywhereFitness" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NCs-nu-XBs" id="Ck2-p7-s33">
@@ -375,14 +395,17 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ukq-Hb-XyP">
                                             <rect key="frame" x="20" y="19" width="221" height="52"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Class Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buW-L1-AdV">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buW-L1-AdV">
                                                     <rect key="frame" x="0.0" y="0.0" width="91" height="23.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fmo-7Z-xdQ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fmo-7Z-xdQ">
                                                     <rect key="frame" x="0.0" y="31.5" width="38" height="20.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20.5" id="Unn-HM-IME"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -399,6 +422,11 @@
                                         <constraint firstItem="Ppu-ux-G6d" firstAttribute="leading" secondItem="Ukq-Hb-XyP" secondAttribute="trailing" constant="100" id="zqb-yd-4Dh"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="className" destination="buW-L1-AdV" id="Ny0-7M-suh"/>
+                                    <outlet property="level" destination="Ppu-ux-G6d" id="Znz-La-ifg"/>
+                                    <outlet property="time" destination="Fmo-7Z-xdQ" id="EXe-Qs-M3N"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -421,7 +449,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="90a-KT-Gof">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="90a-KT-Gof" customClass="InstructorTableViewCell" customModule="AnywhereFitness" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="90a-KT-Gof" id="Exv-TV-NYt">
@@ -437,14 +465,17 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kLq-Ri-Zsd">
                                             <rect key="frame" x="20" y="19" width="221" height="52"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Class Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8M-Mu-JfF">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8M-Mu-JfF">
                                                     <rect key="frame" x="0.0" y="0.0" width="91" height="23.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaC-IX-DUi">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaC-IX-DUi">
                                                     <rect key="frame" x="0.0" y="31.5" width="38" height="20.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20.5" id="PsH-km-0fV"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -462,6 +493,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="className" destination="Y8M-Mu-JfF" id="6Ot-2e-I7M"/>
+                                    <outlet property="level" destination="0jL-ml-gWG" id="GRF-yc-8ar"/>
+                                    <outlet property="time" destination="LaC-IX-DUi" id="o4b-Fn-6pS"/>
                                     <segue destination="ysS-NB-HbA" kind="presentation" identifier="InstructorLoginSegue" modalPresentationStyle="fullScreen" id="tim-0s-5af"/>
                                 </connections>
                             </tableViewCell>
@@ -680,8 +714,24 @@
                         <viewLayoutGuide key="safeArea" id="bc8-yg-9bM"/>
                     </view>
                     <navigationItem key="navigationItem" title="Create a Class" id="hQt-09-hgJ">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="EFX-0M-ue3"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="EFX-0M-ue3">
+                            <connections>
+                                <action selector="saveTapped:" destination="yQf-rk-X5R" id="tvM-J6-BQ2"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="classNameTextField" destination="1p2-Gq-Ui3" id="keG-a3-Y50"/>
+                        <outlet property="classSizeTextField" destination="VKA-bf-vIU" id="CiY-tS-SAT"/>
+                        <outlet property="date" destination="zrd-E4-iAF" id="luZ-7A-hN4"/>
+                        <outlet property="description" destination="Efu-X2-Omm" id="0kc-vf-2BO"/>
+                        <outlet property="descriptionTextView" destination="Efu-X2-Omm" id="tkz-dd-ybZ"/>
+                        <outlet property="durationTextField" destination="VKA-bf-vIU" id="3Dr-JV-eiE"/>
+                        <outlet property="intensityTextField" destination="Ixm-Tg-hTz" id="PUa-xr-7BH"/>
+                        <outlet property="locationTextField" destination="au2-YB-mdm" id="rOC-nb-9cq"/>
+                        <outlet property="typeTextField" destination="6WD-G0-VKv" id="lb9-3L-lY8"/>
+                        <outlet property="yourNameTextField" destination="Bwq-VW-Fcv" id="LVW-Mk-4tQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4E6-Bm-MnM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -772,6 +822,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rVh-PY-fnH"/>
                     </view>
+                    <connections>
+                        <outlet property="enterButton" destination="iZx-WH-11o" id="n6P-eJ-2FE"/>
+                        <outlet property="loginControl" destination="Gts-cU-svp" id="atB-Z8-qPd"/>
+                        <outlet property="passwordTextField" destination="Pem-tc-4gV" id="eCP-XF-3di"/>
+                        <outlet property="usernameTextField" destination="9cv-Wp-qDr" id="qeL-hF-juF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xQB-sZ-vEj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -782,6 +838,6 @@
         <image name="person.fill" catalog="system" width="64" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VUi-QY-XZb"/>
+        <segue reference="cxZ-7x-49g"/>
     </inferredMetricsTieBreakers>
 </document>

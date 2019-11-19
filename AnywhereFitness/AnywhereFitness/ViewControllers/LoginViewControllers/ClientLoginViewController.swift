@@ -9,6 +9,12 @@
 import UIKit
 
 class ClientLoginViewController: UIViewController {
+    
+    @IBOutlet weak var loginControl: UISegmentedControl!
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var enterButton: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
