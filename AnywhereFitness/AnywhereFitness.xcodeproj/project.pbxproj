@@ -13,6 +13,13 @@
 		4B29731123833A4600E9CC76 /* AnywhereFitness.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B29730F23833A4600E9CC76 /* AnywhereFitness.xcdatamodeld */; };
 		4B29731323833A4900E9CC76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B29731223833A4900E9CC76 /* Assets.xcassets */; };
 		4B29731623833A4900E9CC76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B29731423833A4900E9CC76 /* LaunchScreen.storyboard */; };
+		80A8A34523836769000AED7C /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8A34423836769000AED7C /* CoreDataStack.swift */; };
+		80A8A347238367C6000AED7C /* ClassRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8A346238367C6000AED7C /* ClassRepresentation.swift */; };
+		80A8A349238367DA000AED7C /* ClientRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8A348238367DA000AED7C /* ClientRepresentation.swift */; };
+		80A8A34B238367E9000AED7C /* InstructorRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8A34A238367E9000AED7C /* InstructorRepresentation.swift */; };
+		80A8A34E23836914000AED7C /* Class+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8A34D23836914000AED7C /* Class+Convenience.swift */; };
+		80A8A3512383694F000AED7C /* Client+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8A3502383694F000AED7C /* Client+Convenience.swift */; };
+		80A8A3532383695D000AED7C /* Instructor+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8A3522383695D000AED7C /* Instructor+Convenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		4B29731223833A4900E9CC76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B29731523833A4900E9CC76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B29731723833A4900E9CC76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80A8A34423836769000AED7C /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		80A8A346238367C6000AED7C /* ClassRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRepresentation.swift; sourceTree = "<group>"; };
+		80A8A348238367DA000AED7C /* ClientRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientRepresentation.swift; sourceTree = "<group>"; };
+		80A8A34A238367E9000AED7C /* InstructorRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorRepresentation.swift; sourceTree = "<group>"; };
+		80A8A34D23836914000AED7C /* Class+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Class+Convenience.swift"; sourceTree = "<group>"; };
+		80A8A3502383694F000AED7C /* Client+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Client+Convenience.swift"; sourceTree = "<group>"; };
+		80A8A3522383695D000AED7C /* Instructor+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instructor+Convenience.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +76,40 @@
 				4B29731223833A4900E9CC76 /* Assets.xcassets */,
 				4B29731423833A4900E9CC76 /* LaunchScreen.storyboard */,
 				4B29731723833A4900E9CC76 /* Info.plist */,
-				4B29730F23833A4600E9CC76 /* AnywhereFitness.xcdatamodeld */,
+				80A8A3432383674F000AED7C /* Models */,
 			);
 			path = AnywhereFitness;
+			sourceTree = "<group>";
+		};
+		80A8A3432383674F000AED7C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4B29730F23833A4600E9CC76 /* AnywhereFitness.xcdatamodeld */,
+				80A8A34423836769000AED7C /* CoreDataStack.swift */,
+				80A8A34C238368FB000AED7C /* Representations */,
+				80A8A34F2383691A000AED7C /* Models+Convenience */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		80A8A34C238368FB000AED7C /* Representations */ = {
+			isa = PBXGroup;
+			children = (
+				80A8A346238367C6000AED7C /* ClassRepresentation.swift */,
+				80A8A348238367DA000AED7C /* ClientRepresentation.swift */,
+				80A8A34A238367E9000AED7C /* InstructorRepresentation.swift */,
+			);
+			path = Representations;
+			sourceTree = "<group>";
+		};
+		80A8A34F2383691A000AED7C /* Models+Convenience */ = {
+			isa = PBXGroup;
+			children = (
+				80A8A34D23836914000AED7C /* Class+Convenience.swift */,
+				80A8A3502383694F000AED7C /* Client+Convenience.swift */,
+				80A8A3522383695D000AED7C /* Instructor+Convenience.swift */,
+			);
+			path = "Models+Convenience";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +183,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80A8A34E23836914000AED7C /* Class+Convenience.swift in Sources */,
+				80A8A34B238367E9000AED7C /* InstructorRepresentation.swift in Sources */,
 				4B29730723833A4600E9CC76 /* AppDelegate.swift in Sources */,
+				80A8A349238367DA000AED7C /* ClientRepresentation.swift in Sources */,
+				80A8A3532383695D000AED7C /* Instructor+Convenience.swift in Sources */,
+				80A8A3512383694F000AED7C /* Client+Convenience.swift in Sources */,
 				4B29730923833A4600E9CC76 /* SceneDelegate.swift in Sources */,
+				80A8A347238367C6000AED7C /* ClassRepresentation.swift in Sources */,
 				4B29731123833A4600E9CC76 /* AnywhereFitness.xcdatamodeld in Sources */,
+				80A8A34523836769000AED7C /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +343,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = NarJesse.AnywhereFitness;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NarJesse.AnywhereFitness;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,7 +361,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = NarJesse.AnywhereFitness;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NarJesse.AnywhereFitness;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
