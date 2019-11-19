@@ -737,7 +737,6 @@
                         <outlet property="classNameTextField" destination="1p2-Gq-Ui3" id="keG-a3-Y50"/>
                         <outlet property="classSizeTextField" destination="VKA-bf-vIU" id="CiY-tS-SAT"/>
                         <outlet property="date" destination="zrd-E4-iAF" id="luZ-7A-hN4"/>
-                        <outlet property="description" destination="Efu-X2-Omm" id="0kc-vf-2BO"/>
                         <outlet property="descriptionTextView" destination="Efu-X2-Omm" id="tkz-dd-ybZ"/>
                         <outlet property="durationTextField" destination="VKA-bf-vIU" id="3Dr-JV-eiE"/>
                         <outlet property="intensityTextField" destination="Ixm-Tg-hTz" id="PUa-xr-7BH"/>
