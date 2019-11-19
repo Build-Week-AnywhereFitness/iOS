@@ -31,6 +31,7 @@
 		4BD5485B238358290040D1EA /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD5485A238358290040D1EA /* OnboardViewController.swift */; };
 		4BD5485D238358400040D1EA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD5485C238358400040D1EA /* WelcomeViewController.swift */; };
 		80A8A355238469CA000AED7C /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8A354238469CA000AED7C /* CoreDataStack.swift */; };
+		80A8A386238487F1000AED7C /* ClassController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8A385238487F1000AED7C /* ClassController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		4BD5485A238358290040D1EA /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
 		4BD5485C238358400040D1EA /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		80A8A354238469CA000AED7C /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		80A8A385238487F1000AED7C /* ClassController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				4B29731223833A4900E9CC76 /* Assets.xcassets */,
 				4B29731423833A4900E9CC76 /* LaunchScreen.storyboard */,
 				4B29731723833A4900E9CC76 /* Info.plist */,
+				80A8A385238487F1000AED7C /* ClassController.swift */,
 			);
 			path = AnywhereFitness;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				4BB5FF6523847AF10053DD68 /* AllClassesTableViewCell.swift in Sources */,
 				4BD54858238356ED0040D1EA /* ClassInfoViewController.swift in Sources */,
 				4B29730923833A4600E9CC76 /* SceneDelegate.swift in Sources */,
+				80A8A386238487F1000AED7C /* ClassController.swift in Sources */,
 				4BB5FF6723847AFF0053DD68 /* ProfileTableViewCell.swift in Sources */,
 				4BB5FF6323847AE30053DD68 /* InstructorTableViewController.swift in Sources */,
 				4BD5485D238358400040D1EA /* WelcomeViewController.swift in Sources */,

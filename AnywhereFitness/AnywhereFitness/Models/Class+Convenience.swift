@@ -15,9 +15,10 @@ extension Class {
         guard let name = name,
             let location = location,
             let classDetail = classDetail,
-            let date = date else { return nil }
+            let date = date,
+            let id = id else { return nil }
         
-        return ClassRepresentation(name: name, type: Int(), duration: Int(), intensityLevel: Int(), location: location, numOfAttendees: Int(), maxClassSize: Int(), classDetail: classDetail, date: date)
+        return ClassRepresentation(name: name, type: Int(), duration: Int(), intensityLevel: Int(), location: location, numOfAttendees: Int(), maxClassSize: Int(), classDetail: classDetail, date: date, id: id)
     }
     
     @discardableResult convenience init(name: String,
@@ -29,6 +30,7 @@ extension Class {
                                         maxClassSize: Int,
                                         classDetail: String,
                                         date: Date,
+                                        id: UUID = UUID(),
                                         context: NSManagedObjectContext) {
         self.init(context: context)
         
@@ -36,6 +38,7 @@ extension Class {
         self.location = location
         self.classDetail = classDetail
         self.date = date
+        self.id = id
     }
     
     @discardableResult convenience init?(classRepresentation: ClassRepresentation, context: NSManagedObjectContext) {
@@ -49,6 +52,7 @@ extension Class {
                   maxClassSize: classRepresentation.maxClassSize,
                   classDetail: classRepresentation.classDetail,
                   date: classRepresentation.date,
+                  id: classRepresentation.id,
                   context: context)
     }
 }
